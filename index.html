@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#100e0c">
+    <meta name="description" content="Enter The Missing Case, a two-room detective escape room mystery. Search for clues, solve locks, and uncover the truth.">
+    <title>The Missing Case | An Escape Room Mystery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home-page">
+    <div class="grain"></div>
+    <header class="topbar home-topbar">
+        <a class="wordmark" href="index.html"><span class="wordmark-mark">M</span><span>THE MISSING CASE</span></a>
+        <div class="topbar-right"><span class="topbar-kicker">ESCAPE <i></i> INVESTIGATE <i></i> SOLVE</span><button class="sound-toggle" type="button" data-sound-toggle aria-label="Toggle sound">SOUND <span class="sound-state">ON</span></button></div>
+    </header>
+
+    <main class="home-wrap">
+        <section class="home-copy">
+            <p class="eyebrow"><span class="eyebrow-line"></span> AN INTERACTIVE DETECTIVE MYSTERY</p>
+            <h1 class="home-title">The Missing <em>Case</em></h1>
+            <p class="home-lede">A detective vanished. Two rooms remain locked. Every object has a story, and every detail matters.</p>
+            <div class="case-stamp"><span class="stamp-top">CONFIDENTIAL INVESTIGATION</span><strong>CASE NO. 027</strong><span class="stamp-bottom">STATUS: UNSOLVED</span></div>
+            <div class="home-actions">
+                <a class="btn btn-primary btn-large" id="startButton" href="room1.html"><span>Start investigation</span><b>↗</b></a>
+                <button class="btn btn-quiet" id="continueButton" type="button">Continue case <span>→</span></button>
+                <button class="btn btn-quiet" id="howButton" type="button">How to play <span>+</span></button>
+            </div>
+            <div class="home-meta"><span><b>02</b> LOCATIONS</span><span><b>06</b> MAIN CLUES</span><span><b>01</b> MISSING DETECTIVE</span></div>
+        </section>
+        <section class="home-art-wrap" aria-label="Detective's evidence wall">
+            <div class="home-art-frame"><img src="assets/images/menu-art.webp" alt="A detective's evidence wall, old photographs, case papers and a desk lamp"><div class="art-vignette"></div><div class="art-caption"><span>THE LAST KNOWN LOCATION</span><strong>Something was left behind.</strong></div><div class="art-number">027</div></div>
+            <div class="home-side-note"><span class="vertical-rule"></span><span>AN UNSOLVED STORY<br>WAITING FOR YOU</span></div>
+        </section>
+    </main>
+
+    <footer class="home-footer"><span>THE MISSING CASE <b>—</b> A WEB ESCAPE ROOM</span><span>BEST EXPERIENCED WITH SOUND ON</span><span>© 2026 CASE FILE 027</span></footer>
+
+    <div class="overlay" id="infoOverlay" aria-hidden="true">
+        <section class="dialog-card info-dialog" role="dialog" aria-modal="true" aria-labelledby="infoTitle">
+            <button class="dialog-x" type="button" data-close aria-label="Close">×</button>
+            <p class="eyebrow">FIELD GUIDE</p>
+            <h2 id="infoTitle">How to play</h2>
+            <p class="dialog-intro">Explore each room carefully. The detective rarely left a clue in plain sight.</p>
+            <div class="guide-list">
+                <div><span>01</span><section><strong>Investigate</strong><p>Select the glowing points in the scene to inspect objects and discover clues.</p></section></div>
+                <div><span>02</span><section><strong>Collect</strong><p>Important items are added to your case inventory. Some clues can be revisited.</p></section></div>
+                <div><span>03</span><section><strong>Connect the clues</strong><p>Read notes carefully before entering a combination. Hints are available if you get stuck.</p></section></div>
+                <div><span>04</span><section><strong>Escape</strong><p>Complete both rooms and uncover what happened to the missing detective.</p></section></div>
+            </div>
+            <button class="btn btn-primary btn-full" type="button" data-close>Understood</button>
+        </section>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
