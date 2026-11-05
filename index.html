@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f1e9">
+  <meta name="description" content="A good place to find your next favourite thing to cook.">
+  <title>What's Cooking? — Recipes worth keeping</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <div class="announcement-bar">
+    <p>Good food, no fuss <span aria-hidden="true">✳</span> A little inspiration for your next meal</p>
+  </div>
+
+  <header class="site-header">
+    <a class="wordmark" href="#discover" aria-label="What's Cooking? home">what's cooking<span>?</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="nav-link is-active" href="#discover" data-view-link="discover">Discover</a>
+      <a class="nav-link saved-nav" href="#saved" data-view-link="saved">My favourites <span id="favourite-count" class="nav-count">0</span></a>
+    </nav>
+    <a class="header-note" href="#discover">Find something lovely to make <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="discover" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> YOUR EVERYDAY RECIPE EDIT</p>
+        <h1 id="hero-title">A good day<br>starts <em>in the kitchen.</em></h1>
+        <p class="hero-description">The kind of recipes you’ll want to make again. Simple ingredients, satisfying food, and a little inspiration for whatever’s in your fridge.</p>
+        <a class="text-link" href="#recipe-grid">Find your next favourite <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=1400&q=85" alt="A freshly prepared meal with colourful vegetables on a dining table" fetchpriority="high">
+        <div class="hero-stamp" aria-label="Made for real life">
+          <span class="stamp-top">MADE FOR</span>
+          <span class="stamp-main">real life</span>
+          <span class="stamp-bottom">& hungry people</span>
+        </div>
+        <p class="image-caption">A little something good, every day.</p>
+      </div>
+      <div class="hero-bottom-rule"><span>01 / 04</span><span>FRESH IDEAS FOR EVERYDAY COOKING</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="catalog-section" id="recipe-grid" aria-labelledby="catalog-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" id="catalog-kicker"><span class="eyebrow-line"></span> THE RECIPE COLLECTION</p>
+          <h2 id="catalog-heading">Find your <em>kind</em> of delicious.</h2>
+        </div>
+        <p class="section-aside" id="catalog-intro">From quick weekday dinners to slow Sunday mornings. Pick a mood, find a recipe, make it yours.</p>
+      </div>
+
+      <div class="catalog-tools">
+        <form class="search-form" id="search-form" role="search">
+          <label class="sr-only" for="recipe-search">Search recipes or ingredients</label>
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input id="recipe-search" type="search" placeholder="Search a dish or ingredient..." autocomplete="off">
+          <button class="search-clear" id="clear-search" type="button" aria-label="Clear search" hidden>×</button>
+        </form>
+        <div class="category-filters" role="group" aria-label="Filter recipes by category">
+          <button class="filter-chip is-selected" type="button" data-category="All" aria-pressed="true">All recipes</button>
+          <button class="filter-chip" type="button" data-category="Breakfast" aria-pressed="false">Breakfast</button>
+          <button class="filter-chip" type="button" data-category="Lunch" aria-pressed="false">Lunch</button>
+          <button class="filter-chip" type="button" data-category="Dinner" aria-pressed="false">Dinner</button>
+          <button class="filter-chip" type="button" data-category="Sweet" aria-pressed="false">Something sweet</button>
+        </div>
+      </div>
+
+      <div class="results-line">
+        <p id="results-label" aria-live="polite">A few good things to cook <span>·</span> <strong>13 recipes</strong></p>
+        <button class="surprise-button" type="button" id="surprise-button"><span aria-hidden="true">✳</span> Surprise me</button>
+      </div>
+
+      <div class="recipe-grid" id="recipe-list" aria-live="polite"></div>
+      <div class="empty-state" id="empty-state" hidden>
+        <span class="empty-sparkle" aria-hidden="true">✳</span>
+        <h3 id="empty-title">Nothing on the menu just yet.</h3>
+        <p id="empty-description">Try another search or choose a different category.</p>
+        <button type="button" class="button button-dark" id="reset-filters">Show all recipes</button>
+      </div>
+    </section>
+
+    <section class="newsletter-band" aria-label="Cooking inspiration">
+      <div class="newsletter-mark" aria-hidden="true">✳</div>
+      <div>
+        <p class="eyebrow">A SMALL REMINDER</p>
+        <h2>Good food doesn't<br>need a special occasion.</h2>
+      </div>
+      <p class="newsletter-copy">Save the recipes you love. Come back when you need a little dinner inspiration. That's what this place is for.</p>
+      <a class="round-arrow" href="#saved" aria-label="Go to my favourites">↗</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark footer-wordmark" href="#discover">what's cooking<span>?</span></a>
+    <p>Made for curious cooks and hungry people.</p>
+    <a href="#discover" class="back-top">BACK TO TOP ↑</a>
+  </footer>
+
+  <dialog class="recipe-dialog" id="recipe-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-shell">
+      <button class="dialog-close" type="button" id="close-dialog" aria-label="Close recipe">×</button>
+      <div id="recipe-detail"></div>
+    </div>
+  </dialog>
+</body>
+</html>
