@@ -1,2 +1,0 @@
-# team-Project
-for WP
