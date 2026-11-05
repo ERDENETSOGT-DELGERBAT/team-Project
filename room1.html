@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Detective's Office - The Missing Case</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="game-page">
+    <header class="site-header">
+        <a href="index.html" class="brand">THE MISSING CASE</a>
+        <span class="header-label">ROOM 01 / 02</span>
+    </header>
+
+    <main class="game-container">
+        <div class="room-heading">
+            <div>
+                <p class="eyebrow">FIRST LOCATION</p>
+                <h1>The Detective's Office</h1>
+                <p>Search the room and find a way to unlock the door.</p>
+            </div>
+            <a href="index.html" class="text-link">BACK TO MENU</a>
+        </div>
+
+        <div class="game-layout">
+            <section class="room-scene office-scene">
+                <div class="scene-caption">DETECTIVE'S PRIVATE OFFICE</div>
+
+                <button class="hotspot calendar-object" data-object="calendar">
+                    <span class="object-icon">🗓️</span>
+                    <span class="object-name">Calendar</span>
+                </button>
+
+                <button class="hotspot portrait-object" data-object="portrait">
+                    <span class="object-icon">🖼️</span>
+                    <span class="object-name">Portrait</span>
+                </button>
+
+                <button class="hotspot bookshelf-object" data-object="bookshelf">
+                    <span class="object-icon">📚</span>
+                    <span class="object-name">Bookshelf</span>
+                </button>
+
+                <button class="hotspot desk-object" data-object="desk">
+                    <span class="object-icon">🗄️</span>
+                    <span class="object-name">Desk</span>
+                </button>
+
+                <button class="hotspot door-object" data-object="door">
+                    <span class="object-icon">🚪</span>
+                    <span class="object-name">Locked Door</span>
+                </button>
+            </section>
+
+            <aside class="side-panel">
+                <div class="panel-card">
+                    <p class="eyebrow">YOUR OBJECTIVE</p>
+                    <h2>Find the key</h2>
+                    <p>Explore the office, open the locked desk drawer, and find the key to the next room.</p>
+                </div>
+
+                <div class="panel-card">
+                    <p class="eyebrow">INVENTORY</p>
+                    <ul class="inventory-list" id="inventory">
+                        <li>Nothing collected yet</li>
+                    </ul>
+                </div>
+
+                <button class="button button-primary full-button" id="hintButton">GET A HINT</button>
+            </aside>
+        </div>
+
+        <div class="room-footer">
+            <span>CLICK OBJECTS TO INVESTIGATE</span>
+            <span>THE MISSING CASE</span>
+        </div>
+    </main>
+
+    <div class="modal" id="gameModal" aria-hidden="true">
+        <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+            <p class="eyebrow">INVESTIGATION</p>
+            <h2 id="modalTitle"></h2>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/room1.js"></script>
+</body>
+</html>
