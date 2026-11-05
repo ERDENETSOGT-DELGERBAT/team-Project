@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#100e0c">
+    <title>Room 1: The Detective's Office | The Missing Case</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="game-page" data-room="1">
+    <div class="grain"></div>
+    <header class="topbar game-topbar">
+        <a class="wordmark" href="index.html"><span class="wordmark-mark">M</span><span>THE MISSING CASE</span></a>
+        <div class="game-top-center"><span class="room-count">LOCATION 01 <i>/</i> 02</span><span class="top-separator"></span><span class="room-name-top">THE DETECTIVE'S OFFICE</span></div>
+        <div class="topbar-right"><button class="sound-toggle" type="button" data-sound-toggle>SOUND <span class="sound-state">ON</span></button><a class="exit-link" href="index.html">EXIT <span>↗</span></a></div>
+    </header>
+
+    <main class="game-wrap">
+        <section class="game-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> FIRST LOCATION</p><h1>The Detective's <em>Office</em></h1><p class="heading-sub">Search the room. The smallest details may matter.</p></div><div class="case-progress"><span>CASE PROGRESS</span><div class="progress-track"><i id="progressFill"></i></div><strong id="progressText">0 / 6 clues</strong></div></section>
+
+        <div class="game-grid">
+            <section class="scene-column">
+                <div class="scene-toolbar"><span><i class="live-dot"></i> LIVE INVESTIGATION</span><span>SELECT AN OBJECT TO INSPECT</span></div>
+                <div class="scene-frame scene-office" id="sceneFrame">
+                    <div class="scene-shade"></div>
+                    <div class="scene-label"><span>SCENE 01</span><b>PRIVATE OFFICE</b></div>
+                    <button class="hotspot hs-books" type="button" data-object="bookshelf" aria-label="Investigate bookshelf"><span class="hotspot-ring"></span><span class="hotspot-label">BOOKSHELF</span></button>
+                    <button class="hotspot hs-calendar" type="button" data-object="calendar" aria-label="Investigate calendar"><span class="hotspot-ring"></span><span class="hotspot-label">CALENDAR</span></button>
+                    <button class="hotspot hs-photo" type="button" data-object="portrait" aria-label="Investigate photograph"><span class="hotspot-ring"></span><span class="hotspot-label">PHOTOGRAPH</span></button>
+                    <button class="hotspot hs-desk" type="button" data-object="desk" aria-label="Investigate desk"><span class="hotspot-ring"></span><span class="hotspot-label">LOCKED DRAWER</span></button>
+                    <button class="hotspot hs-door" type="button" data-object="door" aria-label="Investigate locked door"><span class="hotspot-ring"></span><span class="hotspot-label">EXIT</span></button>
+                    <div class="scene-bottom"><span>CASE NO. 027</span><span>CLICK THE GLOWING MARKERS TO SEARCH</span></div>
+                </div>
+                <div class="scene-foot"><span id="sceneMessage">The office is quiet. Search it thoroughly.</span><span class="scene-coordinate">51°30' N&nbsp;&nbsp; 00°07' W</span></div>
+            </section>
+
+            <aside class="case-sidebar">
+                <section class="sidebar-card objective-card"><div class="card-heading"><span>YOUR OBJECTIVE</span><span class="card-index">01</span></div><h2 id="objectiveTitle">Find the office key</h2><p id="objectiveText">Open the desk drawer and collect the key. Search for the detective's note before leaving.</p><div class="objective-steps"><div class="objective-step" id="stepCode"><span class="step-check">1</span><span>Unlock the desk</span></div><div class="objective-step" id="stepNote"><span class="step-check">2</span><span>Find the hidden note</span></div><div class="objective-step" id="stepDoor"><span class="step-check">3</span><span>Open the archive door</span></div></div></section>
+                <section class="sidebar-card inventory-card"><div class="card-heading"><span>CASE INVENTORY</span><span class="item-count" id="itemCount">0 ITEMS</span></div><div class="inventory-grid" id="inventoryGrid"><div class="inventory-empty"><span>＋</span><small>Your collected items will appear here.</small></div></div></section>
+                <section class="sidebar-card journal-card"><div class="card-heading"><span>FIELD NOTES</span><span class="card-index">LOG</span></div><div class="journal-entry" id="journalEntry"><span class="journal-mark">—</span><p>No clues recorded yet. Investigate an object to begin.</p></div></section>
+                <div class="sidebar-actions"><button class="btn btn-hint" id="hintButton" type="button"><span class="hint-icon">?</span><span>Need a hint?</span><b>→</b></button><button class="reset-link" id="resetButton" type="button">Reset this investigation</button></div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="game-footer"><span>THE MISSING CASE <b>—</b> CASE NO. 027</span><span>YOUR PROGRESS SAVES AUTOMATICALLY</span></footer>
+
+    <div class="overlay" id="gameOverlay" aria-hidden="true"><section class="dialog-card game-dialog" role="dialog" aria-modal="true" aria-labelledby="dialogTitle"><button class="dialog-x" type="button" data-close aria-label="Close">×</button><div class="dialog-eyebrow"><span class="live-dot"></span><span id="dialogCategory">OBJECT INVESTIGATION</span></div><div id="dialogContent"></div></section></div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="js/main.js"></script>
+    <script src="js/room1.js"></script>
+</body>
+</html>
