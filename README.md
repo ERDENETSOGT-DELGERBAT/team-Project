@@ -37,13 +37,6 @@ Through this project, our team aims to apply the concepts learned in Web Program
 
 The project gives us an opportunity to practice website development, content organization, user interface design, and creating a website that provides practical value to its visitors.
 
-## How to Use the Website
-
-1. Open the website using the link below.
-2. Browse the available recipe content.
-3. Select a recipe that interests you.
-4. Explore the information provided for that recipe.
-
 ## Project Links
 
 - **Live Website:** https://erdenetsogt-delgerbat.github.io/team-Project/
