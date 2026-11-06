@@ -22,15 +22,6 @@ Our main goals are to:
 - Create a useful and easy-to-navigate website.
 - Remove needless Complexity 
 
-## Main Website Features
-
-The website is designed around the following features:
-
-- **Recipe Discovery:** Visitors can explore available recipes and find ideas for everyday meals.
-- **Recipe Information:** Recipes provide useful information to help visitors understand what they need and how to prepare a meal.
-- **User-Friendly Navigation:** The website is organized to make browsing and accessing recipe information straightforward.
-- **Everyday Cooking Focus:** The content focuses on practical meal ideas that people can use in their daily lives.
-
 ## Target Audience
 
 The website is intended for anyone interested in cooking, including:
