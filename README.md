@@ -62,4 +62,4 @@ The project gives us an opportunity to practice website development, content org
 
 **Project:** What's Cooking?
 **Course:** Web Programming  
-**Team Members:** ERDENETSOGT DELGERBAT / 202539430 BATNASAN ERDENESAMBUU / 202539462 CHINGUN / 202539480
+**Team Members:** ERDENETSOGT DELGERBAT (202539430) / BATNASAN ERDENESAMBUU (202539462) / CHINGUN (202539480)
